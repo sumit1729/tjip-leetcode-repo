@@ -1,9 +1,13 @@
+//TC: O(N)
+// MC: O(N)
+
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
+		// nums = 2, -5, 3, 1, 100, 4, 200
         // sort -> [-5], [1,2,3,4], [100], [200]
 
-        // nums = 2, -5, 3, 1, 100, 4, 200
+        
 
         unordered_set<int> bucket(nums.begin(), nums.end());
          // O(N)
